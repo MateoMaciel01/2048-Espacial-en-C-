@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="2048!" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/2048!" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/2048!" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics-d" />
+			<Add library="sfml-window-d" />
+			<Add library="sfml-system-d" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="include/Celda.h" />
+		<Unit filename="include/Efectos.h" />
+		<Unit filename="include/Estados.h" />
+		<Unit filename="include/FichaEspeciales.h" />
+		<Unit filename="include/Fichas.h" />
+		<Unit filename="include/Interfaz.h" />
+		<Unit filename="include/Juego.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Opciones.h" />
+		<Unit filename="include/Tablero.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Efectos.cpp" />
+		<Unit filename="src/Estados.cpp" />
+		<Unit filename="src/FichaEspeciales.cpp" />
+		<Unit filename="src/Fichas.cpp" />
+		<Unit filename="src/Interfaz.cpp" />
+		<Unit filename="src/Juego.cpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Opciones.cpp" />
+		<Unit filename="src/Tablero.cpp" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_language="" />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
